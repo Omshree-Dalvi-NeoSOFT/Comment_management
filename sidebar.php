@@ -21,10 +21,7 @@ $imgpath=$arr['profileimg'];
   </div>
   <ul class="list-group list-group-flush sidebar">
     <!-- print details -->
-    <a href="?con=editprofile"><li class="list-group-item" role="button">Edit Profile</li></a>
-    <a href="?con=catagory"><li class="list-group-item" role="button">Catagory</li></a>
-    <a href="?con=products"><li class="list-group-item" role="button">Products</li></a>
-    <a href="?con=orders"><li class="list-group-item" role="button">Orders</li></a>
-    <a href="?con=feedback"><li class="list-group-item" role="button">FeedBack</li></a>
+    <a href="?con=addpost"><li class="list-group-item" role="button">Add Post</li></a>
+    <a href="?con=view"><li class="list-group-item" role="button">View Post</li></a>
   </ul>
 </div>

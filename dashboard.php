@@ -35,6 +35,12 @@
                 case 'changepass':
                     include('changepass.php');
                     break;
+                case 'addpost':
+                    include('addpost.php');
+                    break;
+                case 'view':
+                    include('post.php');
+                    break;
                 default:
                     include('post.php');      
             }
