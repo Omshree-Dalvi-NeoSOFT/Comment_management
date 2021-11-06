@@ -2,7 +2,7 @@
     <footer class="text-center text-lg-start bg-light text-muted mt-4 ftbg">
         <!-- Section: Social media -->
         <section>
-            <img src="Photo/me.jpg" class="rounded rounded-circle mt-5 " height="100px" width="100px">
+            <img src="me.jpg" class="rounded rounded-circle mt-5 " height="100px" width="100px">
         </section>
         <section class="d-flex justify-content-center p-4">
             <P>

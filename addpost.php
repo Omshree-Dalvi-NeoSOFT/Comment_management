@@ -11,6 +11,7 @@ if(isset($_POST['sub'])){
         $fn=$_FILES['att']['name'];//orginal name
         $post=$_POST['post'];
         $msg=$ob->addnew($id,$title,$temp,$fn,$post);
+        echo $msg;
     }
     else{
         echo '<div class="alert alert-danger" role="alert">

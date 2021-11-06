@@ -6,7 +6,7 @@
         rgba(177, 179, 182, 0.52),
         rgb(0, 0, 0)
       ),
-      url("Photo/footerbackground.jpg");
+      url("footerbackground.jpg");
     background-size: 100% 100%;
     width: 100%;
   }
