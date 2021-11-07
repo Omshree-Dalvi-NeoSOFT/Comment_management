@@ -1,6 +1,7 @@
 <?php 
  session_start();
  $sid=$_SESSION['sid'];
+  // check session.
  if(empty($sid)){
    header("location:index.php");
  }
@@ -14,7 +15,7 @@
 </head>
 <body>
     <?php include('nav.php')?>
-    <section class="mb-3"></section>
+    <section class="mt-3"></section>
     <section class="container-fluid">
 
     <section class="row">

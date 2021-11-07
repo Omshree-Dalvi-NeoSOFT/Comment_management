@@ -1,3 +1,10 @@
+<?php
+// check session
+if(empty($sid)){
+    header("location:index.php");
+  }
+?>
+
 <!-- welcome page showing user email id -->
 <!DOCTYPE html>
 <html lang="en">

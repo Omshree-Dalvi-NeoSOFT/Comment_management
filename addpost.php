@@ -1,15 +1,24 @@
 <?php 
+// check session
+if(empty($sid)){
+  header("location:index.php");
+}
+// connection file and classes file.
 include("connection.php");
 include("class.php");
+// session
 $id=$_SESSION['sid'];
 $user=$_SESSION['user'];
+// class object as $ob
 $ob= new Project();
 if(isset($_POST['sub'])){
+  // check for empty
     if(!empty($_POST['title']) || !empty($_POST['att']) || !empty($_POST['post'])){
         $title=$_POST['title'];
         $temp=$_FILES['att']['tmp_name'];//read tmp name
         $fn=$_FILES['att']['name'];//orginal name
         $post=$_POST['post'];
+        // adding post to Database, call function.
         $msg=$ob->addnew($id,$title,$temp,$fn,$post);
         echo $msg;
     }
@@ -23,6 +32,7 @@ if(isset($_POST['sub'])){
 
 ?>
 
+<!-- Post form. -->
 <form method="post" enctype="multipart/form-data">
 <div class="card">
   <h5 class="card-header">Featured Post : <?= $user?></h5>

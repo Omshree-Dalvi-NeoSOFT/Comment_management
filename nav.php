@@ -1,5 +1,6 @@
 <?php 
 // session to print username on nav
+error_reporting(0);
 session_start();
 $id=$_SESSION['sid'];
 $user=$_SESSION['user'];
@@ -20,9 +21,6 @@ $user=$_SESSION['user'];
       <li class="nav-item ">
         <a class="nav-link" href="?con=home">Home</a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link"  href="products.php">Products</a>
-      </li> -->
       <li class="nav-item">
         <a class="nav-link"  href="?con=changepass">Change Password</a>
       </li>
@@ -35,5 +33,5 @@ $user=$_SESSION['user'];
     </form>
   </div>
 </nav>
-
+<section class="mt-4">..</section>
     

@@ -1,5 +1,6 @@
 <?php 
 error_reporting(0);
+// include connection file
 include("connection.php");
 $fetch=mysqli_query($conn,"SELECT * FROM users ORDER BY created_at DESC;");
 

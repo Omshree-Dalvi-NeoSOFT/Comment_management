@@ -1,4 +1,4 @@
-<!--  Code foe captcha -->
+<!--  Code for captcha -->
 
 <?php
 $r1=range(0,9);
