@@ -19,7 +19,7 @@ if(mysqli_num_rows($fetch)>0){
         <p class="card-text"><?php echo $arr['post']?></p>
         <a class="btn btn-success" href="?con=comment&pid=<?= $pid?>&uid=<?= $uid?>"> Comment</a>
         <?php
-          $f=mysqli_query($conn,"SELECT * FROM comment WHERE pid=$pid;");
+          $f=mysqli_query($conn,"SELECT * FROM comment WHERE pid=$pid ORDER BY created_at DESC;");
           if(mysqli_num_rows($f)>0){
             while($a=mysqli_fetch_assoc($f)){
               $uid=$a['uid'];
